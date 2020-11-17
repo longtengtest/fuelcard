@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pytest-db
+Version: 0.1
+Summary: Session scope fixture "db" for mysql query or change
+Home-page: https://github.com/hanzhichao/pytest-db
+Author: Han Zhichao
+Author-email: superhin@126.com
+License: MIT license
+Description: Session scope fixture "db" for mysql query or change
+Keywords: pytest,py.test,db,mysql
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7

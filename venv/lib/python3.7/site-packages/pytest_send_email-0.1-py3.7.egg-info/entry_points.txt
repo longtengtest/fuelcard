@@ -1,0 +1,3 @@
+[pytest11]
+pytest-send-email = pytest_send_email.plugin
+

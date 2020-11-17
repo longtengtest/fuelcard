@@ -1,0 +1,3 @@
+[pytest11]
+pytest-data-file = pytest_data_file.plugin
+
