@@ -1,0 +1,20 @@
+name: 绑定加油卡
+request:
+  method: POST
+  url: /gasStation/process
+  json:
+    dataSourceId: ${ENV(DATA_SOURCE_ID)}
+    methodId: 01A
+    CardUser:
+      userName: $user_name
+      idType: $id_type
+      idNumber: $id_number
+      email: $email
+      gender: $gender
+    CardInfo:
+      cardNumber: $card_number
+
+# FOR DEBUG
+base_url: ${ENV(BASE_URL)}
+variables:
+  card_number: hzc_00001

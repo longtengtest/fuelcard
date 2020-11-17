@@ -1,0 +1,14 @@
+name: 查询加油卡
+request:
+  method: GET
+  url: /gasStation/process
+  params:
+    dataSourceId: ${ENV(DATA_SOURCE_ID)}
+    methodId: 02A
+    userId: $user_id
+    cardNumber: $card_number
+
+# FOR DEBUG
+base_url: ${ENV(BASE_URL)}
+variables:
+  card_number: hzc_00001

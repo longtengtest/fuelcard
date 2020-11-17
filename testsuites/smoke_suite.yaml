@@ -1,0 +1,6 @@
+config:
+  name: 一批冒烟用例
+
+testcases:
+  正常添加加油卡:
+    testcase: testcases/test_add_fuelcard_01.yaml

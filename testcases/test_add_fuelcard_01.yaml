@@ -1,0 +1,18 @@
+- config:
+    name: 测试正常添加加油卡
+    request:
+      base_url: ${ENV(BASE_URL)}
+
+- test:
+    name: 步骤1-添加加油卡
+    api: api/add_fuelcard.yaml
+    variables:
+      card_number: hzc_00001
+    setup_hooks:
+      - ${del_card_if_exist($card_number)}
+    teardown_hooks:
+      - ${del_card_if_exist($card_number)}
+    validate:
+      - eq: ["status_code", 200]
+      - eq: ["content.msg", "添加卡成功"]
+      - eq: ["content.success", False]
